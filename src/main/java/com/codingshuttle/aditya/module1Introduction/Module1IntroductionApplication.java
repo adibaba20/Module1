@@ -1,0 +1,19 @@
+package com.codingshuttle.aditya.module1Introduction;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+
+@SpringBootApplication
+public class Module1IntroductionApplication implements CommandLineRunner {
+	@Autowired
+	PaymentService paymentServiceObj;
+	public static void main(String[] args) {
+		SpringApplication.run(Module1IntroductionApplication.class, args);
+	}
+        @Override
+		public void run(String... args) throws Exception{
+		paymentServiceObj.pay();
+		}
+
+}
