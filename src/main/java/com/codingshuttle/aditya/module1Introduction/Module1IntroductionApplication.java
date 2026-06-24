@@ -10,12 +10,15 @@ public class Module1IntroductionApplication implements CommandLineRunner {
 //	@Autowired
 	//PaymentService paymentServiceObj;
 
+
+	@Autowired
+	NotificationService notificationServiceObj;
 	public static void main(String[] args) {
 		SpringApplication.run(Module1IntroductionApplication.class, args);
 	}
         @Override
 		public void run(String... args) throws Exception{
-		NotificationService notificationServiceObj=new EmailNotificationService();
+		// NotificationService notificationServiceObj=new EmailNotificationService();
 		notificationServiceObj.send("hello");
 		}
 

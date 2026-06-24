@@ -11,6 +11,7 @@ public class PaymentService {
 
     @PostConstruct
     public void afterinitttt()
+
     {
         System.out.println("Before paying......");
 
